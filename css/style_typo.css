@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css");
+@font-face {
+  font-family: "SlowGothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/neurimboGothicRegular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OgRenaissanceSecret";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/OG_Renaissance_Secret-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Simple";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cafe24ProUp";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2507-1@1.0/Cafe24PROUP.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+/* break-all : 글자 하나하나 글자 단위로 줄바꿈
+  Keep-all : 글자, 단어가 가지고 있는 것을 지킴. 단어 단위로 줄바꿈
+  
+  text-indent : 들여쓰기
+  */
+
+/* 기본 폰트 시스템 */
+.container_inlay {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+
+  word-spacing: -2.5%;
+  word-break: keep-all;
+}
+
+.container_index {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 20px;
+  word-spacing: -2.5%;
+  word-break: keep-all;
+}
+
+/* 0놀이 개별 폰트 */
+.imgbtn_click_01 {
+  font-family: "SlowGothic";
+  font-size: 108px;
+  line-height: 130%;
+}
+
+.imgbtn_click_02 {
+  font-family: "OgRenaissanceSecret";
+  font-size: 92px;
+  line-height: 110%;
+}
+
+.imgbtn_click_03 {
+  font-family: "Simple";
+  font-size: 80px;
+  line-height: 90%;
+}
+
+.imgbtn_click_04 {
+  font-family: "Cafe24ProUp";
+  font-size: 80px;
+  line-height: 90%;
+}

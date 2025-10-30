@@ -1,0 +1,42 @@
+html {
+  background: radial-gradient(
+    56.76% 100% at 100% 100%,
+    #e05236 0%,
+    #f7f3f1 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container_inlay {
+  color: #3a2e28;
+}
+
+[class^="info_book"] {
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+}
+[class^="info_book"] p {
+  color: #3a2e28;
+}
+
+[class^="imgbtn_click_"] {
+  color: #e05236;
+}
+
+.line_org {
+  background-color: #e05236;
+}
+
+.icon_change {
+  color: #e05236;
+}
+
+.img_hover {
+  filter: drop-shadow(4px 4px 12px #e05236);
+}
+
+[class^="wrap_book"]:active[class^="img_book"] {
+  box-shadow: 0 0 20px #e05236;
+}

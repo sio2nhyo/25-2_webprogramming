@@ -1,0 +1,217 @@
+/* 기본 구조 규칙 */
+html {
+  height: 100%;
+}
+
+body {
+  display: block;
+
+  margin: auto;
+  padding: 40px;
+
+  min-width: 1000px;
+  max-width: 1280px;
+}
+
+/* 책 부분 */
+.container_index {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1280px;
+  height: 700px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+/* 책 크기 */
+[class^="wrap_book"] {
+  display: block;
+  position: relative;
+  width: 25%;
+  height: auto;
+}
+
+[class^="img_book"] {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+[class^="info_book"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img_book033.img_book034.img_book035.img_book036 {
+  top: 0;
+  left: 0;
+}
+
+.img_book037.wrap_book038.img_book039.img_book040 {
+  bottom: 0;
+  left: 0;
+}
+
+/* 표지 부분 */
+.container_cover {
+  position: relative;
+  width: 1130px;
+  height: 682px;
+  margin: 0 auto;
+}
+
+.img_default {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.img_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.img_move {
+  display: block;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* 내지 부분 */
+.container_inlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+
+  margin: auto;
+  gap: 12px;
+}
+
+/* row 규칙 */
+[class^="row_"] {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  margin: auto 12px;
+  gap: 12px;
+
+  height: 116px;
+}
+
+.row_both {
+  justify-content: space-between;
+}
+
+.txt_both_lf,
+.txt_both_rgt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  gap: 12px;
+}
+
+.row_left {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.row_right {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* container 내부 디자인 요소 */
+.line_org {
+  margin: auto;
+  height: 8px;
+  border: none;
+  flex-grow: 1;
+}
+
+.img_squ {
+  margin: auto 0;
+  aspect-ratio: 1/1;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.img_rec {
+  margin: auto 0;
+  aspect-ratio: 4/1;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.icon_change {
+  display: inline-block;
+  min-width: 1em;
+  text-align: center;
+}
+
+/* 배경에 배치될 이미지 */
+.backgroundimg {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: -1;
+
+  width: 400px;
+  height: auto;
+}
+
+.dynamic_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* text>image 규칙 */
+.imgbtn {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  gap: 8px;
+  height: auto;
+}
+
+[class^="imgbtn_click_"] {
+  height: auto;
+  cursor: pointer;
+}
